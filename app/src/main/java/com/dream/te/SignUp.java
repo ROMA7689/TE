@@ -26,6 +26,7 @@ private FirebaseAuth mAuth;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up);
+        getSupportActionBar().setTitle("Signup Form");
         e1=findViewById(R.id.editText);
         e2=findViewById(R.id.editText2);
         e3=findViewById(R.id.editText3);
@@ -46,6 +47,7 @@ private FirebaseAuth mAuth;
                 createAccount(email,password,detail);
             }
         });
+
 
     }
 

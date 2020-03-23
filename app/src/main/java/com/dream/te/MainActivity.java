@@ -50,6 +50,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        getSupportActionBar().setTitle("Login Form");
     }
     @Override
     public void onStart() {
@@ -90,4 +91,7 @@ public class MainActivity extends AppCompatActivity {
                 });
     }
 
+    public void btn_SignUp(View view) {
+        startActivity(new Intent (getApplicationContext(),SignUp.class));
+    }
 }
